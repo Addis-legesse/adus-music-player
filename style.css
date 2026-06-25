@@ -1,0 +1,125 @@
+:root {
+  --bg: #0a0a0a;
+  --card: #141414;
+  --accent: #800020;
+  --text: #f0e8ec;
+  --muted: #7a6672;
+  --track: #2a1520;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  font-family: Arial, sans-serif;
+}
+
+.player-container {
+  width: 380px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-title {
+  color:violet;
+  font-size: 20px; /* Increased from 12px */
+  letter-spacing: 3px; /* Slightly increased for better readability */
+  text-transform: uppercase; /* Optional: makes it look more like a header */
+  font-weight: bold; /* Optional: makes the text stand out more */
+}
+
+
+.album-art {
+  width: 200px;
+  height: 200px;
+  background: #1a0010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: var(--accent);
+  font-size: 50px;
+}
+
+.track-info h2 {
+  color: violet;
+  margin: 0;
+  font-size: 28px;
+}
+
+.track-info p {
+  color: violet;
+  margin: 5px 0 0;
+  text-align: center;
+  ;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  color: violet;
+  font-size: 24px;
+}
+
+.play-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+}
+
+.progress-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--track);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+}
+
+.volume-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+#volumeSlider {
+  flex: 1;
+}

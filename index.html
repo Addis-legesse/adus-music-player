@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adu Music Player</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="player-container">
+
+  <h1 class="app-title">adu's player</h1>
+
+  <div class="album-art">
+    <i class="fa-solid fa-music"></i>
+  </div>
+
+  <div class="track-info">
+    <h2 id="trackTitle">Track Title</h2>
+    <p id="trackArtist">Artist Name</p>
+  </div>
+
+  <audio id="audio"></audio>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+
+    <button id="shuffleBtn"><i class="fa-solid fa-shuffle"></i></button>
+    <button id="prevBtn"><i class="fa-solid fa-backward-step"></i></button>
+
+    <button id="playBtn" class="play-btn">
+      <i id="playIcon" class="fa-solid fa-play"></i>
+    </button>
+
+    <button id="nextBtn"><i class="fa-solid fa-forward-step"></i></button>
+    <button id="repeatBtn"><i class="fa-solid fa-repeat"></i></button>
+
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-area">
+    <span id="currentTime">0:00</span>
+
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <span id="totalTime">0:00</span>
+  </div>
+
+  <!-- VOLUME -->
+  <div class="volume-area">
+    <i class="fa-solid fa-volume-low"></i>
+  <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
